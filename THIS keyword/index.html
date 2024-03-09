@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS KEYWORD</title>
+</head>
+<body>
+
+    <h2>this keyword ion global object</h2>
+<p>inside the global this keyword retunrs the global boject on it</p>
+<p>global object mat be different depnding on the language  eg in node js the globa object is : global and brosers it is window</p>
+
+<h2>this Keyword inside a finction</h2>
+
+<p>inside a function this keyword will return undefigned but there is an important statement to note</p>
+
+<ul>
+    <li>this.subtition</li>
+        <p>Javascript has a this.subtitution that will replace thiskeyword with global object if the mode is nonstrict mode </p>
+        <p>so if we initially use strict mode it will print undefigned else in it is nnonstrict mode it will replace it with global object due to thethis.subtitution </p>
+    <li>this Keyword depend on how the function is called </li>
+        <p>if called like : x() it will print: undefigned in strict mode</p>
+        <p>if called tike window.x() : it willl print global object</p>
+    <li>if accesing values</li>
+        <p>if we are using this in consolee to access the value in the function it will print the value in function eg console.log(this.a)</p>
+        <p>nomatter the way we call it it will print the same value</p>
+</ul>
+
+
+<h2>this inside an arrow function</h2>
+<p>==> since arrow function dont have their own binding. it will retains this value in the enclosing lexical context</p>
+<ul>
+    <li>normal => </li>
+    <p>if its a normal function it will behave as if in a global object and hence will print global object</p>
+    <li>=> inside a normal function</li>
+    it will 
+    <p>the output will be the object of the function</p>
+
+</ul>
+<p>inside an arrow function it will print the value of the </p>
+
+<h2>This keyword in object</h2>
+<p>inside an object it will print environment of the object but if specified it will print the actual value called</p>
+<p>if an arrow function is inside a function in the object it will do the samething as the environment of the object is the lexical environment of the arrow function</p>
+
+<h2>inside a dom </h2>
+<p>it will return the h html attribute of the element</p>
+<!-- <button onclick="alertdsmbo")">click me</button> -->
+<script src="index.js"></script>
+</body>
+</html>
