@@ -35,6 +35,7 @@
     // function expression cant be called before it is assigned 
 
 <hr>
+
 ### 1. Anonymous functions
 - Functions Without a name
 - They dont have own indentity and this leads to syntax error
