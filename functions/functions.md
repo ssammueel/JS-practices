@@ -15,7 +15,7 @@
 ### Function Expression 
 - when we assign a variable to a Function it forms a function expression
 
-      var a = finction() {
+      var a = function() {
         }
   
 &rarr; in function statement we can call it even before assigning it but in function expression it is treated as a variable and cant be called before assignment
@@ -37,6 +37,7 @@
 <hr>
 
 ### 1. Anonymous functions
+
 - Functions Without a name
 - They dont have own indentity and this leads to syntax error
 
@@ -59,3 +60,31 @@
         
         b();
         // ();
+
+### 3. First class functions
+
+- is the ability of functions to be used as values and can be passed to other functions as arguments and they can also be returned as functions returned from other functions
+
+      function n(pr){
+          console.log(pr)
+      }
+      n(function(){
+      
+      }
+      );
+  
+### 4. Callback functions
+- when we take a function and pass it to another function
+
+        setTimeout(function (){
+          console.log("timer")
+      }, 5000);
+      
+      function x(y){
+          console.log("x");
+          y();
+      }
+      x(function y(){
+          //y is the call backfunctiion
+          console.log("y")
+      });
