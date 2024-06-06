@@ -63,17 +63,30 @@
 
 ### 3. First class functions
 
-- is the ability of functions to be used as values and can be passed to other functions as arguments and they can also be returned as functions returned from other functions
+- functions can be assigned to variables, passed as arguments, returned from other functions, and stored in data structures.
 
-      function n(pr){
+  - Assigned to variables.
+  - Passed as arguments to other functions.
+  - Returned from other functions.
+  - Stored in data structures such as lists, tuples, and dictionaries.
+
+        function n(pr){
           console.log(pr)
-      }
-      n(function(){
+        }
+            n(function(){
       
-      }
-      );
+        }
+        );
+
+### 4.higher order functions
+- A subset of first-class functions that either take other functions as arguments or return functions as results.
   
-### 4. Callback functions
+   - Takes one or more functions as arguments.
+
+   - Returns a function as its result.
+
+  
+### 5. Callback functions
 - when we take a function and pass it to another function
 
         setTimeout(function (){
